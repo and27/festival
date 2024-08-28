@@ -95,10 +95,7 @@ const Gallery = () => {
   };
 
   return (
-    <section
-      className="text-white py-[8rem] bg-neutral-900git remote add origin https://github.com/and27/festival.git"
-      id="gallery"
-    >
+    <section className="text-white py-[8rem] bg-neutral-900" id="gallery">
       <div className="max-w-[1280px] mx-auto" ref={ref}>
         <motion.h2
           style={{

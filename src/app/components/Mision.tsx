@@ -54,7 +54,7 @@ const Mission = () => {
   ];
 
   return (
-    <section className="text-white py-[8rem]" id="gallery">
+    <section className="text-white py-[8rem] px-4" id="gallery">
       <div className="max-w-4xl mx-auto" ref={ref}>
         <motion.h2
           style={{

@@ -7,7 +7,7 @@ export const bebasNeue = Bebas_Neue({
 });
 
 const Hero = () => (
-  <main className="relative back md:h-screen text-white pt-[80px] md:pt-0 px-4">
+  <main className="relative back md:h-screen text-white pt-[80px] md:pt-0 px-4 min-h-screen grid items-center">
     <div className="max-w-[1280px] mx-auto grid grid-cols-1 items-center h-full">
       <div className="flex flex-col gap-7 items-start justify-center">
         <Image
