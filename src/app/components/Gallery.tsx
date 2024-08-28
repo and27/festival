@@ -95,7 +95,10 @@ const Gallery = () => {
   };
 
   return (
-    <section className="text-white py-[8rem] bg-neutral-900" id="gallery">
+    <section
+      className="text-white py-[8rem] bg-neutral-900git remote add origin https://github.com/and27/festival.git"
+      id="gallery"
+    >
       <div className="max-w-[1280px] mx-auto" ref={ref}>
         <motion.h2
           style={{
@@ -126,14 +129,6 @@ const Gallery = () => {
                 className="rounded-lg transition-transform duration-500 transform group-hover:scale-110"
                 alt={item.description}
               />
-              {/* <button onClick={() => handleImageLoad}>
-                <div className="relative w-full h-full bg-gradient-to-t from-transparent to-black opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                  <div className="flex flex-col justify-center items-start p-7">
-                    <h3 className="text-2xl text-white">{item.title}</h3>
-                    <h2 className="text-white">{item.name}</h2>
-                  </div>
-                </div>
-              </button> */}
             </motion.div>
           ))}
         </motion.div>

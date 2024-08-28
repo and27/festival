@@ -67,14 +67,14 @@ const Mission = () => {
           Nuestra visión
         </motion.h2>
         <p className="mb-20">
-          El Festival Iberoamericano de Teatro "Cumbre de las Américas" se
+          {`El Festival Iberoamericano de Teatro "Cumbre de las Américas" se
           propone como un espacio trascendental para la integración cultural y
           artística de las Américas y la Península Ibérica, creando un puente
           entre las diversas manifestaciones escénicas del continente. Su visión
           es consolidarse como un referente global en la promoción y difusión de
           las artes escénicas, destacando la riqueza y diversidad cultural de
           los pueblos iberoamericanos y fomentando el diálogo intercultural, la
-          innovación artística y la transformación social a través del teatro.
+          innovación artística y la transformación social a través del teatro.`}
         </p>
         <motion.h2
           style={{
@@ -87,7 +87,7 @@ const Mission = () => {
           Nuestra misión
         </motion.h2>
         <p className="mb-20">
-          El Festival tiene como misión impulsar el desarrollo y la proyección
+          {`El Festival tiene como misión impulsar el desarrollo y la proyección
           internacional del teatro iberoamericano, proporcionando una plataforma
           de encuentro y colaboración para artistas, creadores, y gestores
           culturales de la región. Busca promover el intercambio de
@@ -95,7 +95,7 @@ const Mission = () => {
           de cooperación entre los países participantes. La "Cumbre de las
           Américas" se dedica a la difusión de propuestas escénicas que desafíen
           las fronteras convencionales del teatro, con un enfoque en la
-          diversidad, la inclusión y el respeto a las tradiciones culturales.
+          diversidad, la inclusión y el respeto a las tradiciones culturales. `}
         </p>
         <motion.h2
           style={{

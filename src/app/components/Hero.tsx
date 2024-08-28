@@ -21,7 +21,7 @@ const Hero = () => (
           className={`${bebasNeue.className} text-4xl md:text-5xl font-bold leading-none slide-bottom mt-5 text-center max-w-4xl mx-auto`}
         >
           Festival Iberoamericano de Teatro Mar del Plata <br />
-          <span className="md:text-7xl">"Cumbre de las Américas"</span>
+          <span className="md:text-7xl">{`"Cumbre de las Américas"`}</span>
         </h1>
       </div>
     </div>
