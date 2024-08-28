@@ -9,7 +9,6 @@ type GalleryType = {
   id: string;
   name: string;
   title: string;
-  description: string;
   image: string;
   span?: string;
 };
@@ -18,51 +17,59 @@ const galleryItems: GalleryType[] = [
   {
     id: "1",
     name: "Chris Johnson",
-    title: "Neon Geometric Abstraction",
-    description:
-      "Abstract futuristic NFT with neon colors and geometric shapes",
+    title: "Bodas de Sangre (España)",
     image: "/gallery/festival (1).jpg",
     span: "col-span-2",
   },
   {
     id: "2",
     name: "Andrew Turner",
-    title: "Neon Elephant",
-    description:
-      "Abstract futuristic NFT featuring an elephant with neon colors and geometric patterns",
+    title: "La Nona (Argentina)",
     image: "/gallery/festival (2).jpg",
   },
   {
     id: "3",
     name: "James Whitfield",
-    title: "Cyberpunk Lion",
-    description:
-      "Abstract futuristic NFT featuring a lion with neon colors and geometric patterns",
+    title: "La Celestina (México)",
     image: "/gallery/festival (3).jpg",
     span: "row-span-2",
   },
   {
     id: "4",
     name: "Michael Hayes",
-    title: "Futuristic Cityscape",
-    description: "Lorem ipsum dolor sit amet.",
+    title: "El Rey Lear (Chile)",
     image: "/gallery/festival (4).jpg",
   },
   {
     id: "5",
     name: "Emma Turner",
-    title: "Whimsical Landscape",
-    description:
-      "Surreal whimsical landscape NFT with floating islands, oversized mushrooms, and a dreamy sky",
+    title: "Las Criadas (Uruguay)",
     image: "/gallery/festival (5).jpg",
   },
   {
     id: "6",
     name: "Michael Hayes",
-    title: "Mystical Enchantment",
-    description:
-      "Mystical abstract NFT with swirling mist, floating orbs, and glowing patterns in deep blues, purples, and golds",
+    title: "Hamlet (Colombia)",
     image: "/gallery/festival (6).jpg",
+  },
+  {
+    id: "7",
+    name: "Michael Hayes",
+    title: "Esperando a Godot (Venezuela)",
+    image: "/gallery/festival (7).jpg",
+  },
+  {
+    id: "8",
+    name: "Michael Hayes",
+    title: "Medea Material (Brasil)",
+    image: "/gallery/festival (8).jpg",
+  },
+  {
+    id: "9",
+    name: "Michael Hayes",
+    title: "El Mercader de Venecia (Colombia)",
+    image: "/gallery/festival (9).jpg",
+    span: "col-span-2",
   },
 ];
 
@@ -107,6 +114,7 @@ const Gallery = () => {
         >
           Nuestra galería
         </motion.h2>
+
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4"
           variants={galleryContainer}
@@ -124,8 +132,11 @@ const Gallery = () => {
                 layout="fill"
                 objectFit="cover"
                 className="rounded-lg transition-transform duration-500 transform group-hover:scale-110"
-                alt={item.description}
+                alt={item.title}
               />
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <p>{item.title}</p>
+              </div>
             </motion.div>
           ))}
         </motion.div>

@@ -3,6 +3,7 @@
 import { motion, useAnimation, useInView } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
+import { bebasNeue } from "./Hero";
 
 type EditionType = {
   id: string;
@@ -190,7 +191,10 @@ const EditionsGallery = () => {
   };
 
   return (
-    <section className="text-white py-20 bg-neutral-900" id="editions-gallery">
+    <section
+      className="text-white py-[6rem] bg-neutral-900"
+      id="editions-gallery"
+    >
       <div className="max-w-7xl mx-auto" ref={ref}>
         <motion.h2
           style={{
@@ -198,10 +202,13 @@ const EditionsGallery = () => {
             opacity: isInView ? 1 : 0,
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
-          className="text-4xl md:text-5xl font-bold text-center mx-auto mb-20"
+          className={`text-4xl md:text-5xl font-bold text-center mx-auto mb-5 ${bebasNeue.className}`}
         >
           Ediciones Anteriores
         </motion.h2>
+        <p className="text-center text-lg mb-20 uppercase">
+          Ejes curatoriales y obras participantes
+        </p>
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 p-4"
           variants={galleryContainer}
