@@ -15,11 +15,11 @@ function Scurve() {
         <h2
           className={`text-3xl md:text-4xl font-bold mx-auto mb-8 ${bebasNeue.className}`}
         >
-          Hugo Kogan - Director del Festival Iberoamericano de Teatro Mar del
-          Plata "Cumbre de las Américas"
+          {`Hugo Kogan - Director del Festival Iberoamericano de Teatro Mar del
+          Plata "Cumbre de las Américas"`}
         </h2>
         <p className="mt-4">
-          Hugo Kogan es un destacado director y gestor cultural argentino con
+          {`Hugo Kogan es un destacado director y gestor cultural argentino con
           más de 30 años de experiencia en las artes escénicas. Nacido en Buenos
           Aires, Kogan ha dirigido y producido numerosas obras aclamadas
           internacionalmente. Como director del Festival Iberoamericano de
@@ -28,7 +28,7 @@ function Scurve() {
           cultural y la innovación artística. Reconocido por su visión
           estratégica y su liderazgo, Kogan también es un defensor de la
           educación artística, dedicando su carrera a impulsar nuevas
-          generaciones de artistas.
+          generaciones de artistas.`}
         </p>
       </div>
     </div>
